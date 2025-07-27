@@ -1,40 +1,35 @@
-//to find binomial coefficient 
+//finding binomial coefficient
 #include <iostream>
 using namespace std;
- int ncr(int n,int r){
-    int nfac=1;
-    int rfac=1;
-    int xfac=1;
-    if(n<r){
-        cout<<"not possible";
-        return 0;
-    }else{
-    for(int i=1;i<=n;i++){
-        nfac*=i;
-    }
-    for(int j=1;j<=r;j++){
-        rfac*=j;
-    }
-    int x=n-r;
-    for(int k=1;k<=x;k++){
-        xfac*=k;
-    }
-    int bino=(nfac)/(rfac*xfac);
 
-    return bino;
-   }
+int factorial(int x) {
+    int result = 1;
+    for (int i = 1; i <= x; i++) {
+        result *= i;
+    }
+    return result;
 }
 
-int main(){
-    int n;
-    int r;
-    cout<<"enter the value of n";
-    cin>>n;
-    cout<<"enter the value of r";
-    cin>>r;
-    int result=ncr(n,r);
-    if(result!=0){
-        cout<<"the coefficient is "<<result;
+int ncr(int n, int r) {
+    if (n < r) {
+        cout << "not possible\n";
+        return -1;
+    } else {
+        int bino = factorial(n) / (factorial(r) * factorial(n - r));
+        return bino;
     }
+}
+
+int main() {
+    int n, r;
+    cout << "enter the value of n: ";
+    cin >> n;
+    cout << "enter the value of r: ";
+    cin >> r;
+
+    int result = ncr(n, r);
+    if (result != -1)
+        cout << "required binomial coefficient is " << result;
+
     return 0;
 }
