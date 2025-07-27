@@ -1,3 +1,5 @@
+//to find the sum of the digits of a number 
+//key note- how to access each digit of a number
 #include <iostream>
 using namespace std;
  int digisum(int n){
