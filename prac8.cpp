@@ -3,8 +3,8 @@
 using namespace std;
 int powtwo(int n){
     bool pow=false;
-    if(n>0&&(n&(n-1))>0){
-        return pow;
+    if(n>0&&(n&(n-1))>0){  //number is greater then zero as well as the bitwise and of number and one less then the number is also greater theen zero 
+            return pow;     //(example= 4(n) and 3(n-1) 4->100 & 3->11) is not greater then zero hence it got the else block
         
     }else{
         pow=true;
