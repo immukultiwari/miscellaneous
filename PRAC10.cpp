@@ -11,7 +11,8 @@ void arraymaker(int arr[],int n){
 int mincheck(int arr[],int n){
     int SMALL=INT_MAX;
     for(int i=0;i<n;i++){
-        if(arr[i]<SMALL){
+        if(arr[i]<SMALL){             //mincheck can be upgraded by min(arr[i],SMALL) AND THEN UPDATING SMALL WITH THE RESULT IN LOOP
+            
             SMALL=arr[i];
         }
     }
@@ -28,4 +29,5 @@ int main(){
     return 0;
 
 }
+
 
