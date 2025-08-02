@@ -1,3 +1,4 @@
+//to find the smallest element in an array(operations on array)
 #include <iostream>
 #include <climits>
 using namespace std;
@@ -27,3 +28,4 @@ int main(){
     return 0;
 
 }
+
