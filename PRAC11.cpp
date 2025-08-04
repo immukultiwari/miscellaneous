@@ -1,3 +1,4 @@
+//to find the index of an element from an array using the element
 #include <iostream>
 #include <climits>
 using namespace std;
@@ -37,4 +38,5 @@ int main(){
 
 
 }
+
 
