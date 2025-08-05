@@ -1,3 +1,4 @@
+//to reverse an array (2 pointer approach)
 #include <iostream>
 using namespace std;
 void arrrev(int arr[],int size){
@@ -40,5 +41,6 @@ int main(){
 
 
     
+
 
 
