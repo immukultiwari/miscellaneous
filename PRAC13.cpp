@@ -1,3 +1,4 @@
+//pushback and size function use on vectors
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -17,4 +18,5 @@ int main(){
          cout<<i<<" ";
     }
 }   
+
 
